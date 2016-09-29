@@ -8,6 +8,34 @@
 }
 
 body {
-  background-image: url("https://hd.unsplash.com/photo-1446776811953-b23d57bd21aa");
+  background-image: url("https://hd.unsplash.com/photo-1469234496837-d0101f54be3e");
   background-size: cover;
+  font-family: "Fondamento"
+}
+
+.ui-sortable, .panel-default {
+  background-color: #E2E9C2;
+  background-size: cover;
+}
+
+.btn-group-vertical {
+  text-align: center;
+}
+
+.option-btn {
+  padding-left: 3%;
+}
+
+#message_id {
+  max-width: 25%;
+}
+
+.form-check {
+  background-color: #EAEED3;
+  max-width: 13%;
+}
+
+#query {
+  background-color: #EAEED3;
+  max-width: 20%;
 }

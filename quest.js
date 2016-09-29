@@ -1,13 +1,13 @@
 $( function() {
   $( "#sortable" ).sortable();
   $( "#sortable" ).disableSelection();
+  $( "#sortable" ).draggable();
+  $( "#sortable" ).droppable();
 } );
 
 var addButton = $('.add-button')
 var questLog = $('.quest-log')
 var addForm = $('.add-form')
-
-
 
 // var sortable = $('.sortable')
 
@@ -29,7 +29,6 @@ embarkQuest.click(function() {
 
   return false;
 })
-
 
 $(function() {
    $("li").draggable();
