@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quest List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Fondamento|La+Belle+Aurore" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container" id="top-row">
+      <div class="row">
+        <div class="col-md-2">
+        <div class="panel panel-default" id="option-panel">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Tools</div>
+          <div class="panel-body">
+            <div class="btn-group-vertical" role="group" aria-label="EDITING OPTS">
+              <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default add-button option-btn">ADD</button>
+                <button type="button" class="btn btn-default option-btn" id="edit">EDIT</button>
+                <!-- <button type="button" id="remove" class="btn btn-default option-btn">REMOVE</button> -->
+                <!-- <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default dropdown-toggle option-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
+                    SORT OPTIONS
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Dropdown link</a></li>
+                    <li><a href="#">Dropdown link</a></li>
+                  </ul>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+          <div class="col-md-9 quest-log">
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Quest Log</div>
+            <div class="panel-body test">
+              <p>You are currently on the following quests:</p>
+              <p>Double click to complete a quest.</p>
+              <hr/>
+
+            </div>
+
+            <!-- List group -->
+            <ul id="sortable">
+              <!-- <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Ex. Quest</li> -->
+              <!-- <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Quest name 2</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Quest name 3</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Quest name 4</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Quest name 5</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Quest name 6</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Quest name 7</li> -->
+            </ul>
+          </div>
+          </div>
+      </div>
+      </table>
+    <div class="add-form">
+      <form>
+        <div class="form-group"> <!-- Message input !-->
+            <label class="control-label" id="query" for="message_id">Your new quest:</label>
+            <textarea class="form-control" id="message_id" name="message" rows="5"></textarea>
+        </div>
+
+        <div class="form-group"> <!-- Submit button !-->
+            <button id="embark-quest" class="btn btn-primary " name="submit" type="submit">Embark!</button>
+        </div>
+
+
+        <div class="form-check has-success">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option1">
+            Side Quest
+          </label>
+        </div>
+        <div class="form-check has-success">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option2">
+            Standard Quest
+          </label>
+        </div>
+        <div class="form-check has-success">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option3">
+            Main Story Quest
+          </label>
+        </div>
+        </div>
+      </form>
+    </div>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="quest.js"></script>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+  </body>
+</html>
