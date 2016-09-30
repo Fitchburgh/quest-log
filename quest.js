@@ -30,18 +30,22 @@ embarkQuest.click(function() {
   return false;
 })
 
-$(function() {
-   $("li").draggable();
+// var history = JSON.parse(localStorage.getItem("todoData"));
+// localStorage.setItem("todoData", JSON.stringify(history));
 
-   $('#remove').droppable({
-       drop: function(event, ui) {
-           ui.draggable.remove();
-       }
-   });
+$(document).on('dblclick','li', function(){
+        $(this).fadeOut('fast');
 });
 
-
-
+// $(function() {
+//    $('<li>').draggable();
+//
+//    $('#remove').droppable({
+//        over: function(event, ui) {
+//           ui.draggable.remove();
+//        }
+//    });
+// });
 
 questLog.show();
 addForm.hide();
