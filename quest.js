@@ -24,8 +24,8 @@ embarkQuest.click(function() {
 
   messageId.val('')
 
-  questLog.show();
-  addForm.hide();
+  questLog.fadeIn();
+  addForm.fadeOut();
 
   return false;
 })
@@ -37,6 +37,11 @@ $(document).on('dblclick','li', function(){
         $(this).fadeOut('fast');
 });
 
+// $.fn.editable.defaults.mode = 'inline';
+// $(document).ready(function() {
+//     $('li').editable();
+// });
+
 // $(function() {
 //    $('<li>').draggable();
 //
@@ -47,12 +52,12 @@ $(document).on('dblclick','li', function(){
 //    });
 // });
 
-questLog.show();
-addForm.hide();
+questLog.fadeIn('slow');
+addForm.fadeOut();
 
 addButton.click(function() {
-  questLog.hide();
-  addForm.show();
+  questLog.fadeOut();
+  addForm.fadeIn('slow');
 });
 
 
