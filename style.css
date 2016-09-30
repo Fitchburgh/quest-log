@@ -7,6 +7,10 @@
   font-family:
 }
 
+.panel-body {
+  width: auto;
+}
+
 body {
   background-image: url("https://hd.unsplash.com/photo-1469234496837-d0101f54be3e");
   background-size: cover;
@@ -18,7 +22,22 @@ body {
   background-size: cover;
 }
 
-.btn-group-vertical {
+#top-row {
+  text-align: center;
+}
+
+/*#option-panel {
+  max-width: 45%;
+  min-width: 40%;
+}*/
+
+.option-btn {
+  min-width: 75px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.btn-group {
   text-align: center;
 }
 
