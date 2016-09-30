@@ -1,8 +1,8 @@
 $( function() {
   $( "#sortable" ).sortable();
   $( "#sortable" ).disableSelection();
-  $( "#sortable" ).draggable();
-  $( "#sortable" ).droppable();
+  // $( "#sortable" ).draggable();
+  // $( "#sortable" ).droppable();
 } );
 
 var addButton = $('.add-button')
@@ -17,6 +17,9 @@ var embarkQuest = $('#embark-quest')
 
 var messageId = $('#message_id')
 
+var editButton = $('#edit')
+
+
 embarkQuest.click(function() {
   var quest = messageId.val();
 
@@ -26,16 +29,27 @@ embarkQuest.click(function() {
 
   questLog.fadeIn();
   addForm.fadeOut();
-
   return false;
 })
 
-// var history = JSON.parse(localStorage.getItem("todoData"));
-// localStorage.setItem("todoData", JSON.stringify(history));
+var editStatus = false
+
+editButton.click(function(){
+  editStatus = true
+  if (editStatus == true) {
+    $(document).on('click', 'li', function(){
+      addForm.fadeIn('slow');
+      $('li').fadeOut('slow');
+      editStatus = false;
+    })
+  }
+})
 
 $(document).on('dblclick','li', function(){
-        $(this).fadeOut('fast');
+  $(this).fadeOut('fast');
 });
+
+
 
 // $.fn.editable.defaults.mode = 'inline';
 // $(document).ready(function() {
@@ -58,6 +72,7 @@ addForm.fadeOut();
 addButton.click(function() {
   questLog.fadeOut();
   addForm.fadeIn('slow');
+  editStatus = false;
 });
 
 
