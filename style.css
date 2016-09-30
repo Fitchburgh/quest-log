@@ -11,6 +11,10 @@
   width: auto;
 }
 
+.col-md-2 {
+  text-align: center;
+}
+
 body {
   background-image: url("https://hd.unsplash.com/photo-1469234496837-d0101f54be3e");
   background-size: cover;
@@ -22,10 +26,6 @@ body {
   background-size: cover;
 }
 
-#top-row {
-  text-align: center;
-}
-
 /*#option-panel {
   max-width: 45%;
   min-width: 40%;
@@ -34,7 +34,6 @@ body {
 .option-btn {
   min-width: 75px;
   max-width: 200px;
-  text-align: center;
 }
 
 .btn-group {
